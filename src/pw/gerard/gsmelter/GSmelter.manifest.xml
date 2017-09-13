@@ -1,0 +1,23 @@
+<manifest>
+    <main-class>pw.gerard.gsmelter.GSmelter</main-class>
+    <name>gSmelter (Alpha)</name>
+    <tag-line>Smelts bar, nothing more</tag-line>
+    <description>Smelts bars in OSRS, nothing more.</description>
+    <version>1.0.2</version>
+    <compatibility>
+        <game>OSRS</game>
+    </compatibility>
+    <categories>
+        <category>SMITHING</category>
+    </categories>
+    <internal-id>gSmelter</internal-id>
+    <open-source>true</open-source>
+    <hidden>false</hidden>
+    <access>public</access>
+    <tags>
+        <tag>Smelter</tag>
+    </tags>
+    <!--<resources>-->
+        <!--<resource>someday/i/will/add/this.png</resource>-->
+    <!--</resources>-->
+</manifest>

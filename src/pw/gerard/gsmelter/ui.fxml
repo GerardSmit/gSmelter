@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <Tab text="Actions">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView id="actions_ores" fx:id="actionsList" layoutX="132.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="actionsColumnDone" prefWidth="58.0" text="Done" />
+                                <TableColumn fx:id="actionsColumnAmount" prefWidth="75.0" text="Amount" />
+                                <TableColumn fx:id="actionsColumnBar" prefWidth="124.0" text="Bar" />
+                                <TableColumn fx:id="actionsColumnLocation" prefWidth="179.0" text="Location" />
+                            </columns>
+                        </TableView>
+                        <Label layoutX="14.0" layoutY="6.0" text="Bar" />
+                        <ComboBox fx:id="actionsBar" layoutX="14.0" layoutY="23.0" prefHeight="25.0" prefWidth="174.0" />
+                        <Label layoutX="14.0" layoutY="56.0" text="Location" />
+                        <ComboBox id="actions_location" fx:id="actionsLocation" layoutX="14.0" layoutY="73.0" prefHeight="25.0" prefWidth="174.0" />
+                        <Button id="actions_add" fx:id="actionsAdd" layoutX="14.0" layoutY="109.0" mnemonicParsing="false" onAction="#addAction" prefHeight="25.0" prefWidth="64.0" text="Add" />
+                        <Button id="actions_remove" fx:id="actionsRemove" disable="true" layoutX="124.0" layoutY="109.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="25.0" prefWidth="64.0" text="Remove" textFill="#b24747" />
+                        <Button fx:id="actionsStart" layoutX="14.0" layoutY="332.0" mnemonicParsing="false" onAction="#startBot" prefHeight="25.0" prefWidth="174.0" text="Start Bot" AnchorPane.bottomAnchor="14.0" />
+                  <Label fx:id="actionsStatus" alignment="CENTER" layoutX="14.0" layoutY="311.0" prefHeight="17.0" prefWidth="174.0" text="Status label" visible="false" AnchorPane.bottomAnchor="44.0" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
